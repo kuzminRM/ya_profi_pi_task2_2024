@@ -39,4 +39,4 @@ async def register_qr(
     if host:
         create_host(request.task, request.size)
 
-    return Request()
+    return Response(result=Response.ResultEnum.OK, host_id=13)
